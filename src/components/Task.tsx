@@ -77,7 +77,7 @@ const Task = () => {
             </h1>
             <button
               onClick={() => setIsDark(!isDark)}
-              className={`p-2 rounded-lg ${
+              className={` cursor-pointer p-2 rounded-lg ${
                 isDark
                   ? "bg-gray-700 text-gray-300"
                   : "bg-gray-100 text-gray-600"
@@ -172,7 +172,7 @@ const Task = () => {
                 name="priority"
                 value={details.priority}
                 onChange={handleInput}
-                className={`w-32 px-4 py-2 rounded-lg ${
+                className={` cursor-pointer w-32 px-4 py-2 rounded-lg ${
                   isDark
                     ? "bg-gray-700 text-white border-gray-600"
                     : "bg-white text-gray-800 border-gray-200"
@@ -185,7 +185,7 @@ const Task = () => {
               </select>
               <button
                 type="submit"
-                className="px-4 py-2 bg-violet-500 text-white rounded-lg hover:bg-violet-600 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 transition-colors flex items-center gap-2"
+                className="px-4 py-2 bg-violet-500 text-white rounded-lg hover:bg-violet-600 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 transition-colors flex items-center gap-2 cursor-pointer"
               >
                 <Plus className="w-4 h-4" />
                 Add Task
@@ -222,7 +222,7 @@ const Task = () => {
           <select
             value={filter}
             onChange={(e) => setFilter(e.target.value)}
-            className={`px-3 py-1.5 rounded-md ${
+            className={`cursor-pointer px-3 py-1.5 rounded-md ${
               isDark
                 ? "bg-gray-700 text-white border-gray-600"
                 : "bg-white text-gray-800 border-gray-200"
@@ -247,7 +247,7 @@ const Task = () => {
               <div className="flex items-center gap-4 flex-1">
                 <button
                   onClick={() => toggleStatus(index)}
-                  className="focus:outline-none hover:opacity-80 transition-opacity"
+                  className="cursor-pointer focus:outline-none hover:opacity-80 transition-opacity"
                 >
                   {task.status ? (
                     <CheckCircle className="w-6 h-6 text-green-500" />
